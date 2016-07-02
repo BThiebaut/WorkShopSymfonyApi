@@ -1,0 +1,14 @@
+work_shop:
+    resource: "@WorkShopBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+api:
+    type:     rest
+    resource: WorkShopBundle\Controller\DefaultController
+
+
+set_data_default:
+    pattern:  /setDataDefault
+    defaults: { _controller: WorkShopBundle:Default:set, _format: ~ }
+    
